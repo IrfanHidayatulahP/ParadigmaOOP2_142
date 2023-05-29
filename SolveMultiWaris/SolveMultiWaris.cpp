@@ -7,7 +7,7 @@ public:
 
 	orang(int pUmur) :
 		umur(pUmur) {
-		cout << "Orang dibuat dengan umur " << umur << endl;
+		cout << "Orang dibuat dengan umur " << umur << "\n" << endl;
 	}
 };
 
@@ -20,6 +20,14 @@ public:
 	}
 };
 
+class pelajar : virtual public orang {
+public:
+
+	pelajar(int pUmur) :
+		orang(pUmur) {
+		cout << "Pelajar dibuat\n" << endl;
+	}
+};
 
 
 int main() {
